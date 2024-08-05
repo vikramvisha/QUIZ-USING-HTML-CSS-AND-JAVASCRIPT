@@ -1,0 +1,83 @@
+body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .quiz-container {
+            border: 2px solid #ccc;
+            padding: 30px;
+            border-radius: 15px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            text-align: left;
+            width: 100%;
+        }
+
+        .quiz-container h1 {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .option span {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            border-radius: 10%;
+            margin-right: 10px;
+            color: white;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ff4b5c, #ff8a5b);
+        }
+
+        .option[data-value="A"] span {
+            background: linear-gradient(45deg, #ff4b5c, #ff8a5b);
+        }
+
+        .option[data-value="B"] span {
+            background: linear-gradient(45deg, #4b5cff, #5b8aff);
+        }
+
+        .option[data-value="C"] span {
+            background: linear-gradient(45deg, #4bff5c, #8aff5b);
+        }
+
+        .option[data-value="D"] span {
+            background: linear-gradient(45deg, #ffb84b, #ffcf5b);
+        }
+
+        .correct {
+            background-color: #4bff5c !important;
+            color: white !important;
+        }
+
+        .incorrect {
+            background-color: #ff4b5c !important;
+            color: white !important;
+        }
+
+        #print p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 20px;
+        }
